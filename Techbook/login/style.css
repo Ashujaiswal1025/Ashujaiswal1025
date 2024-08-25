@@ -1,0 +1,177 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #c2d5e3;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    font-family: lobster two,sans-serif;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.login-box {
+    max-width: 500px;
+    width: 100%;
+    background-color: #ffff;
+    padding:  15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(251, 251, 251);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-box p{
+    color: #3e3b3bcc;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input-box {
+    width: 70%;
+    position: relative;
+    margin: 1rem; 
+}
+
+.input-box input {
+    width: 100%;
+    padding: .8rem 0.6rem;
+    font-size: 1.05rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #dbe6f3;
+    transition: border-color 0.2s ease;
+
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #007bff; 
+}
+
+.but{
+    padding: 7px 55px;
+    background-color: #007bff;
+    color: #ffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.but:disabled{
+    opacity: 0.8;
+    cursor: auto;
+}
+
+#accc{
+    flex-direction: column;
+    padding: 10px 15px;
+    margin: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+#accc a{
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.forgot{
+    margin-top: 50px;
+}
+
+.forgot a{
+    text-decoration: none;
+    color: #3e3b3bcc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.slash{
+    display: flex;
+    margin: 25px;
+}
+
+.or{
+    color: #ccc;
+    font-family: sans-serif;
+}
+
+.line{
+    width: 150px;
+    height: 1px;
+    border: 1px solid #ccc;
+    margin: 10px 5px;
+}
+
+.back{
+    width: 100%;
+    padding: 20px;
+    margin-top: 35px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.back a{
+    text-decoration: none;
+    color: #3e3b3bcc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.account{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+}
+
+.login-box i{
+    font-size: 25px;
+}
+
+.login-box .icons{
+    display: flex; 
+    justify-content: right;
+    width: 100%;
+    top: 50%; 
+    transform: translateY(-50%);
+    right: 5px;
+    position: absolute;
+}
+
+.input-box .fa-check, .input-box .fa-times {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+
+.icons .green{
+    display: none;
+    padding: 3px 5px;
+    border: 2px double #00ff00;
+    border-radius: 60%;
+}
+
+.icons .red{
+    display: none;
+    padding: 3px 5px;
+    border: 2px double #ff0000;
+    border-radius: 50%;
+}
